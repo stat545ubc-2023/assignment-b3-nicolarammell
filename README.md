@@ -99,6 +99,6 @@ Additional features of interest include:
 
 My **Vancouver Street Tree Planting** app is deployed online on
 shinyapps.io. [Here's the link to the
-app!](https://nicolarammell.shinyapps.io/shiny-app/)!
+app!](https://nicolarammell.shinyapps.io/shiny-app/)
 
 🌲🌳🌲🌳🌲
