@@ -1,9 +1,3 @@
----
-editor_options: 
-  markdown: 
-    wrap: 72
----
-
 # Vancouver Street Tree Planting app
 
 **Author**: Nicola Rammell\
