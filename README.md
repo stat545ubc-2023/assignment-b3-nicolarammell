@@ -1,8 +1,7 @@
 # Vancouver Street Tree Planting app
 
 **Author**: Nicola Rammell\
-**Contact**:
-[rammell\@student.ubc.ca](mailto:rammell@student.ubc.ca){.email}
+**Contact**: rammell@student.ubc.ca
 
 ## Option B: Create my own Shiny app!
 
