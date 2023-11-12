@@ -95,7 +95,7 @@ Additional features of interest include:
     Portal](https://opendata.vancouver.ca/explore/dataset/street-trees/information/?disjunctive.species_name&disjunctive.common_name&disjunctive.on_street&disjunctive.neighbourhood_name)
     dataset!
 
-## Link to the Vancouver Street Tree App
+## Link to the Vancouver Street Tree Planting app
 
 My **Vancouver Street Tree Planting** app is deployed online on
 shinyapps.io. [Here's the link to the
