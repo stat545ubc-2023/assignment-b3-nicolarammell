@@ -3,7 +3,7 @@
 **Author**: Nicola Rammell\
 **Contact**: rammell@student.ubc.ca
 
-## Option B: Create my own Shiny app!
+## Option B: Create your own Shiny app!
 
 🌲🌳🌲🌳🌲
 
@@ -19,8 +19,8 @@ hosted on the shinyapps.io server and can be viewed
 ## Repository file structure
 
 This repository contains the R code for my app, `app.R`. It also
-contains a subfolder, `www`, which contains the images used in the app.
-Finally, the `rsconnect` subfolder contains files associated with the
+contains a subfolder, `www`, which holds the images used in the app.
+Finally, the `rsconnect` subfolder holds files associated with the
 publication of my app on shinyapps.io.
 
 ## The specifics
@@ -31,13 +31,13 @@ using the `vancouver_trees` dataset from the `datateachr` package.
 Please note that as a starting point, I still referenced the BC Liquor
 app as an example. To start, I reviewed the BC Liquor app linked in the
 STAT545 [slide
-deck](https://docs.google.com/presentation/d/1dXhqqsD7dPOOdcC5Y7RW--dEU7UfU52qlb0YD3kKeLw/edit#slide=id.p);
-the BC Liquor app was built by [Dean
+deck](https://docs.google.com/presentation/d/1dXhqqsD7dPOOdcC5Y7RW--dEU7UfU52qlb0YD3kKeLw/edit#slide=id.p).
+The BC Liquor app was built by [Dean
 Attali](https://github.com/daattali) and can be viewed
 [here](https://daattali.com/shiny/bcl/). Using the BC Liquor app
 [code](https://github.com/daattali/shiny-server/tree/master/bcl) as a
 jumping off point, I built my own **Vancouver Street Tree Planting** app
-with many new and unique features!
+with several new and unique features!
 
 ## Description of the Vancouver Street Tree Planting app
 
@@ -48,13 +48,13 @@ many trees were planted in Vancouver over time. Users can also filter by
 neighborhood and/or filter by latitude and longitude. I included a
 number of features in my app to meet the Assignment B3 requirements.
 
-Three of these unique features *not* already present in the BC Liquor
+Three of these **unique features** *not* already present in the BC Liquor
 app example include:
 
 -   **Add an image to the UI**. I added images to the UI as well as
-    links to the photo source. This is a useful feature because upon
+    links to the photo sources. This is a useful feature because upon
     opening the app, the user can quickly visualize the kind of street
-    trees this dataset includes! This greatly improves the user
+    trees this dataset includes! This improves the user
     experience.
 
 -   **Add a widget to the UI**. I added *two* customized sliders to the
@@ -69,7 +69,7 @@ app example include:
     plot (as a .png file) that is generated based off the user
     preferences! This is a useful feature because it allows the user to
     create a custom plot with their data of interest and quickly
-    download it, even without any knowledge of R/RStudio!
+    download it, even without any knowledge of R/RStudio. 
 
 Additional features of interest include:
 
