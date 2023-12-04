@@ -13,9 +13,9 @@ This is a repository that contains all files as required for UBC's STAT 545B Ass
 
 This repository includes two folders: `app_v1` and `app_v2`.
 
-The `app_v1` folder contains the R code file used to create my Assignment 3 app. It also contains a subfolder which holds the images used in the app. My Assignment 3 app is hosted on the shinyapps.io server and can be viewed [here](https://nicolarammell.shinyapps.io/app_v1/).
+The `app_v1` folder contains the R code file used to create my Assignment 3 app. It also contains a subfolder with images used in the app. My Assignment 3 app is hosted on the shinyapps.io server and can be viewed [here](https://nicolarammell.shinyapps.io/app_v1/).
 
-The `app_v2` folder contains the R code file used to create my Assignment 4 app. It also contains a subfolder which holds the images used in the app. My Assignment 4 app is hosted on the shinyapps.io server and can be viewed [here](https://nicolarammell.shinyapps.io/app_v2/).
+The `app_v2` folder contains the R code file used to create my Assignment 4 app. It also contains a subfolder with images used in the app. My Assignment 4 app is hosted on the shinyapps.io server and can be viewed [here](https://nicolarammell.shinyapps.io/app_v2/).
 
 ## ASSIGNMENT B3
 
