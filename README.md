@@ -1,40 +1,54 @@
-# Vancouver Street Tree Planting app
+---
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+# VANCOUVER STREET TREE PLANTING APP
 
 **Author**: Nicola Rammell\
-**Contact**: rammell@student.ubc.ca
+**Contact**:
+[rammell\@student.ubc.ca](mailto:rammell@student.ubc.ca){.email}
 
 🌲🌳🌲🌳🌲
 
-## About the project
+## ABOUT THE PROJECT
 
-This is a repository that contains all files as required for UBC's STAT 545B Assignment B3 
-and Assignment B4. This is an individual assignment completed in Fall Term as part of 
-STAT 545B: Exploratory Data Analysis II. In this project, I use the `shiny` R package to 
-build and update a Shiny app! 
+This is a repository that contains all files as required for UBC's STAT
+545B Assignment B3 and Assignment B4. This is an individual assignment
+completed in Fall Term as part of STAT 545B: Exploratory Data Analysis
+II. In this project, I use the `shiny` R package to build and update a
+Shiny app!
 
-## Repository file structure
+## REPOSITORY FILE STRUCTURE
 
-This repository includes two folders: `app_v1` and `app_v2`. 
+This repository includes two folders: `app_v1` and `app_v2`.
 
-The `app_v1` folder contains the R code file for my **Assignment 3** app. It also contains a 
-subfolder which holds the images used in the app. My Assignment 3 app is hosted on the 
-shinyapps.io server and can be viewed [here](https://nicolarammell.shinyapps.io/app_v1/). 
+The `app_v1` folder contains the R code file for my **Assignment 3**
+app. It also contains a subfolder which holds the images used in the
+app. My Assignment 3 app is hosted on the shinyapps.io server and can be
+viewed [here](https://nicolarammell.shinyapps.io/app_v1/).
 
-The `app_v2` folder contains the R code file for my **Assignment 4** app. It also contains a 
-subfolder which holds the images used in the app. My Assignment 4 app is hosted on the 
-shinyapps.io server and can be viewed [here](https://nicolarammell.shinyapps.io/app_v2/)
+The `app_v2` folder contains the R code file for my **Assignment 4**
+app. It also contains a subfolder which holds the images used in the
+app. My Assignment 4 app is hosted on the shinyapps.io server and can be
+viewed [here](https://nicolarammell.shinyapps.io/app_v2/).
 
+## ASSIGNMENT B3
 
-## Assignment B3 specifics 
-
-For **Assignment B3**, I chose **Option B: Create your own Shiny app**. Specifically, I 
-decided to make a **Vancouver Street Tree Planting** app using the `vancouver_trees` dataset 
-from the `datateachr` package. Please note that as a starting point, I still referenced the 
-BC Liquor app as an example. To start, I reviewed the BC Liquor app linked in the
-STAT545 [slide deck](https://docs.google.com/presentation/d/1dXhqqsD7dPOOdcC5Y7RW--dEU7UfU52qlb0YD3kKeLw/edit#slide=id.p).
-The BC Liquor app was built by [Dean Attali](https://github.com/daattali) and can be viewed
-[here](https://daattali.com/shiny/bcl/). Using the BC Liquor app [code](https://github.com/daattali/shiny-server/tree/master/bcl) as a jumping off point, I built my own **Vancouver Street Tree Planting** app with several new and unique features!
-
+For **Assignment B3**, I chose **Option B: Create your own Shiny app**.
+Specifically, I decided to make a **Vancouver Street Tree Planting** app
+using the `vancouver_trees` dataset from the `datateachr` package.
+Please note that as a starting point, I still referenced the BC Liquor
+app as an example. To start, I reviewed the BC Liquor app linked in the
+STAT545 [slide
+deck](https://docs.google.com/presentation/d/1dXhqqsD7dPOOdcC5Y7RW--dEU7UfU52qlb0YD3kKeLw/edit#slide=id.p).
+The BC Liquor app was built by [Dean
+Attali](https://github.com/daattali) and can be viewed
+[here](https://daattali.com/shiny/bcl/). Using the BC Liquor app
+[code](https://github.com/daattali/shiny-server/tree/master/bcl) as a
+jumping off point, I built my own **Vancouver Street Tree Planting** app
+with several new and unique features!
 
 ### Description of the Vancouver Street Tree Planting app
 
@@ -45,14 +59,13 @@ many trees were planted in Vancouver over time. Users can also filter by
 neighborhood and/or filter by latitude and longitude. I included a
 number of features in my app to meet the Assignment B3 requirements.
 
-Three of these **unique features** *not* already present in the BC Liquor
-app example include:
+Three of these **unique features** *not* already present in the BC
+Liquor app example include:
 
 -   **Add an image to the UI**. I added images to the UI as well as
     links to the photo sources. This is a useful feature because upon
     opening the app, the user can quickly visualize the kind of street
-    trees this dataset includes! This improves the user
-    experience.
+    trees this dataset includes! This improves the user experience.
 
 -   **Add a widget to the UI**. I added *two* customized sliders to the
     UI, so that users can filter by any combination of latitude and
@@ -66,7 +79,7 @@ app example include:
     plot (as a .png file) that is generated based off the user
     preferences! This is a useful feature because it allows the user to
     create a custom plot with their data of interest and quickly
-    download it, even without any knowledge of R/RStudio. 
+    download it, even without any knowledge of R/RStudio.
 
 Additional features of interest include:
 
@@ -92,10 +105,22 @@ Additional features of interest include:
     Portal](https://opendata.vancouver.ca/explore/dataset/street-trees/information/?disjunctive.species_name&disjunctive.common_name&disjunctive.on_street&disjunctive.neighbourhood_name)
     dataset!
 
-## Link to the Vancouver Street Tree Planting app
+## ASSIGNMENT B4
 
-My **Vancouver Street Tree Planting** app is deployed online on
-shinyapps.io. [Here's the link to the
-app!](https://nicolarammell.shinyapps.io/shiny-app/)
+For Assignment B4, I chose **Option C: Update Your Shiny App**. Below is
+a description of the three features that I updated:
+
+(1) 
+
+(2) 
+
+(3) 
+
+## LINKS TO THE APPS
+
+My [Assignment 3](https://nicolarammell.shinyapps.io/app_v1/) and
+[Assignment 4](https://nicolarammell.shinyapps.io/app_v2/) Vancouver
+Street Tree Planing apps are hosted on the shinyapps.io server and can
+be viewed at the respective links.
 
 🌲🌳🌲🌳🌲
