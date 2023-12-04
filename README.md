@@ -3,43 +3,40 @@
 **Author**: Nicola Rammell\
 **Contact**: rammell@student.ubc.ca
 
-## Option B: Create your own Shiny app!
-
 🌲🌳🌲🌳🌲
 
 ## About the project
 
-This is a repository that contains all files as required for UBC's STAT
-545B Assignment B3. This is an individual assignment completed in Fall
-Term as part of STAT 545B: Exploratory Data Analysis II. In this
-project, I use the `shiny` R package to build a Shiny app! My app is
-hosted on the shinyapps.io server and can be viewed
-[here](https://nicolarammell.shinyapps.io/shiny-app/)!
+This is a repository that contains all files as required for UBC's STAT 545B Assignment B3 
+and Assignment B4. This is an individual assignment completed in Fall Term as part of 
+STAT 545B: Exploratory Data Analysis II. In this project, I use the `shiny` R package to 
+build and update a Shiny app! 
 
 ## Repository file structure
 
-This repository contains the R code for my app, `app.R`. It also
-contains a subfolder, `www`, which holds the images used in the app.
-Finally, the `rsconnect` subfolder holds files associated with the
-publication of my app on shinyapps.io.
+This repository includes two folders: `app_v1` and `app_v2`. 
 
-## The specifics
+The `app_v1` folder contains the R code file for my **Assignment 3** app. It also contains a 
+subfolder which holds the images used in the app. My Assignment 3 app is hosted on the 
+shinyapps.io server and can be viewed [here](https://nicolarammell.shinyapps.io/app_v1/). 
 
-For this assignment, I chose **Option B: Create your own Shiny app**.
-Specifically, I decided to make a **Vancouver Street Tree Planting** app
-using the `vancouver_trees` dataset from the `datateachr` package.
-Please note that as a starting point, I still referenced the BC Liquor
-app as an example. To start, I reviewed the BC Liquor app linked in the
-STAT545 [slide
-deck](https://docs.google.com/presentation/d/1dXhqqsD7dPOOdcC5Y7RW--dEU7UfU52qlb0YD3kKeLw/edit#slide=id.p).
-The BC Liquor app was built by [Dean
-Attali](https://github.com/daattali) and can be viewed
-[here](https://daattali.com/shiny/bcl/). Using the BC Liquor app
-[code](https://github.com/daattali/shiny-server/tree/master/bcl) as a
-jumping off point, I built my own **Vancouver Street Tree Planting** app
-with several new and unique features!
+The `app_v2` folder contains the R code file for my **Assignment 4** app. It also contains a 
+subfolder which holds the images used in the app. My Assignment 4 app is hosted on the 
+shinyapps.io server and can be viewed [here](https://nicolarammell.shinyapps.io/app_v2/)
 
-## Description of the Vancouver Street Tree Planting app
+
+## Assignment B3 specifics 
+
+For **Assignment B3**, I chose **Option B: Create your own Shiny app**. Specifically, I 
+decided to make a **Vancouver Street Tree Planting** app using the `vancouver_trees` dataset 
+from the `datateachr` package. Please note that as a starting point, I still referenced the 
+BC Liquor app as an example. To start, I reviewed the BC Liquor app linked in the
+STAT545 [slide deck](https://docs.google.com/presentation/d/1dXhqqsD7dPOOdcC5Y7RW--dEU7UfU52qlb0YD3kKeLw/edit#slide=id.p).
+The BC Liquor app was built by [Dean Attali](https://github.com/daattali) and can be viewed
+[here](https://daattali.com/shiny/bcl/). Using the BC Liquor app [code](https://github.com/daattali/shiny-server/tree/master/bcl) as a jumping off point, I built my own **Vancouver Street Tree Planting** app with several new and unique features!
+
+
+### Description of the Vancouver Street Tree Planting app
 
 My **Vancouver Street Tree Planting** app allows users to interactively
 explore trees planted in the city of Vancouver from 1989 to 2019.

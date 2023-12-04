@@ -24,7 +24,7 @@ trees <- vancouver_trees %>%
 
 # user interface 
 ui <- fluidPage(
-  titlePanel("Vancouver Street Tree Planting"),
+  titlePanel("Vancouver Street Tree Planting - Assignment 4 Test"),
   sidebarLayout(                                           # use sidebar layout
     sidebarPanel(
       chooseSliderSkin(skin = c("Square"), color = NULL),  # customize slider appearance
@@ -83,7 +83,7 @@ server <- function(input, output, session) {
   # specify first photo
   output$photo1 <- renderImage({                         
     list(
-      src = here::here("www","photo1.png"),                 # give folder and filename
+      src = here::here("www", "photo1.png"),       # give folder and filename
       contentType = "image/png",                            # image type
       width = "100%",                                       # width adjusts to browser
       height = 400                                          # height set to 400
@@ -93,7 +93,7 @@ server <- function(input, output, session) {
   # specify second photo 
   output$photo2 <- renderImage({
     list(
-      src = here::here("www", "photo2.png"),                # give folder and filename
+      src = here::here("www", "photo2.png"),      # give folder and filename
       contentType = "image/png",                            # image type
       width = "100%",                                       # width adjusts to browser
       height = 400                                          # height set to 400
