@@ -24,7 +24,7 @@ trees <- vancouver_trees %>%
 
 # user interface 
 ui <- fluidPage(
-  titlePanel("Vancouver Street Tree Planting - Assignment 4 Test"),
+  titlePanel("Vancouver Street Tree Planting"),
   sidebarLayout(                                           # use sidebar layout
     sidebarPanel(
       chooseSliderSkin(skin = c("Square"), color = NULL),  # customize slider appearance
@@ -43,20 +43,23 @@ ui <- fluidPage(
       imageOutput("photo1"),                               # place image using imageOutput 
       span("Photo Credit:",                                # provide photo reference 
            tags$a("CBC (2022)", href = "https://www.cbc.ca/news/canada/british-columbia/green-canopy-climate-change-1.6500919")),
-      br(), br(),
-      imageOutput("photo2"),                               # place image using imageOutput                           
-      span("Photo Credit:",                                # provide photo reference 
-           tags$a("CBC (2021)", href = "https://www.cbc.ca/news/canada/british-columbia/vancouver-cherry-blossom-japanese-roots-1.5982533")),
       br(), br(),                                          # add my info below
       span("Created by", a(href = "https://github.com/nicolarammell", "Nicola Rammell"), span(" | Code on", a(href = "https://github.com/stat545ubc-2023/shiny-app", "GitHub"))
       ),
     ),
     mainPanel(
-      plotOutput("plot"),                                  # put plot on the main page
-      br(),                                                # put download buttons below
-      downloadButton("download2", "Download Plot"), downloadButton("download1", "Download Table"),
-      br(), br(), br(), 
-      DT::dataTableOutput("planted")                       # put the table output last
+      tabsetPanel(
+        tabPanel("Home", br(), "Welcome to the Vancouver Street Tree Planting app! 
+                 This app allows you to explore trees planted in Vancouver, BC city streets from 1989 - 2019.", br(), br(), 
+                 "To explore trees by neighborhood, try the \"Filter by neighborhood\" option. To refine your 
+                 search geographically, try using the Latitude/Longitude sliders. If you are interested in finding trees belonging 
+                 to specific genera, click on the \"genus\" box to add any number of tree genera using the drop down menu!", br(), br(), 
+                 "As you customize your inputs, your customized plot and table will update in their respective tabs. If you would
+                 like to download your plot or table, simply use the \"Download\" bottons to generate your own copy.", br(), br(), 
+                 "Happy exploring!"),
+        tabPanel("Plot", plotOutput("plot"), br(), downloadButton("download2", "Download Plot")),
+        tabPanel("Table", DT::dataTableOutput("planted"), br(), downloadButton("download1", "Download Table"))
+      )
     )
   )
 )
@@ -80,20 +83,10 @@ server <- function(input, output, session) {
                 selected = "HASTINGS-SUNRISE")              # if TRUE, defaults to HASTINGS-SUNRISE
   })
   
-  # specify first photo
+  # specify photo
   output$photo1 <- renderImage({                         
     list(
-      src = here::here("www", "photo1.png"),       # give folder and filename
-      contentType = "image/png",                            # image type
-      width = "100%",                                       # width adjusts to browser
-      height = 400                                          # height set to 400
-    )
-  }, deleteFile = FALSE)
-  
-  # specify second photo 
-  output$photo2 <- renderImage({
-    list(
-      src = here::here("www", "photo2.png"),      # give folder and filename
+      src = here::here("www", "photo1.png"),                # give folder and filename
       contentType = "image/png",                            # image type
       width = "100%",                                       # width adjusts to browser
       height = 400                                          # height set to 400
