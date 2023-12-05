@@ -1,4 +1,4 @@
-# Vancouver Street Tree Planting app by Nicola Rammell
+# Vancouver Street Tree Planting app by Nicola Rammell - version 2
 
 # load libraries 
 library(shiny)         # used for shiny web app framework
@@ -9,6 +9,8 @@ library(datateachr)    # used to obtain vancouver_trees dataset
 library(DT)            # used for dataTableOutput helper functions
 library(here)          # used for image file paths
 library(shinyWidgets)  # used for customizing sliders
+library(colourpicker)  # used for customizing colours
+library(shinythemes)   # used for adding a theme
 
 # create trees tibble from vancouver_trees 
 trees <- vancouver_trees %>%
@@ -24,6 +26,7 @@ trees <- vancouver_trees %>%
 
 # user interface 
 ui <- fluidPage(
+  theme = shinytheme("flatly"), 
   titlePanel("Vancouver Street Tree Planting"),
   sidebarLayout(                                           # use sidebar layout
     sidebarPanel(
@@ -42,13 +45,13 @@ ui <- fluidPage(
       br(), br(),                                          # breaks for spacing 
       imageOutput("photo1"),                               # place image using imageOutput 
       span("Photo Credit:",                                # provide photo reference 
-           tags$a("CBC (2022)", href = "https://www.cbc.ca/news/canada/british-columbia/green-canopy-climate-change-1.6500919")),
+           tags$a("CBC (2021)", href = "https://www.cbc.ca/news/canada/british-columbia/vancouver-cherry-blossom-japanese-roots-1.5982533")),
       br(), br(),                                          # add my info below
       span("Created by", a(href = "https://github.com/nicolarammell", "Nicola Rammell"), span(" | Code on", a(href = "https://github.com/stat545ubc-2023/shiny-app", "GitHub"))
       ),
     ),
     mainPanel(
-      tabsetPanel(
+      tabsetPanel(                                         # use three tabs in main panel
         tabPanel("Home", br(), "Welcome to the Vancouver Street Tree Planting app! 
                  This app allows you to explore trees planted in Vancouver, BC city streets from 1989 - 2019.", br(), br(), 
                  "To explore trees by neighborhood, try the \"Filter by neighborhood\" option. To refine your 
@@ -57,13 +60,17 @@ ui <- fluidPage(
                  "As you customize your inputs, your customized plot and table will update in their respective tabs. If you would
                  like to download your plot or table, simply use the \"Download\" bottons to generate your own copy.", br(), br(), 
                  "Happy exploring!"),
-        tabPanel("Plot", plotOutput("plot"), br(), downloadButton("download2", "Download Plot")),
-        tabPanel("Table", DT::dataTableOutput("planted"), br(), downloadButton("download1", "Download Table"))
+        tabPanel("Plot", br(),                             # add colour picker
+                 colourInput("col", "Select outline colour", "black", closeOnClick = TRUE), 
+                 plotOutput("plot"), br(),                 # add plot to main panel
+                 downloadButton("download2", "Download Plot")),
+        tabPanel("Table", br(), 
+                 DT::dataTableOutput("planted"), br(),     # add table to main panel
+                 downloadButton("download1", "Download Table"))
       )
     )
   )
 )
-
 
 # server
 server <- function(input, output, session) {
@@ -121,13 +128,12 @@ server <- function(input, output, session) {
   
   # reactive programming for the download plot 
   plotInput <- reactive({
-    df <- planted()
     p <-  ggplot(planted(), aes(year, fill = genus)) +
-      geom_histogram(colour = "black") +
+      geom_histogram(colour = input$col) +
       theme_classic(20) +
       xlab("Year") +
-      ylab("Number of trees planted") +
-      scale_fill_brewer(palette = "PiYG")
+      ylab("Number of trees")  +
+      scale_fill_brewer(palette = "Greens")
   })
   
   # reactive programming for the plot to be shown on main page
@@ -142,6 +148,9 @@ server <- function(input, output, session) {
   output$planted <- DT::renderDataTable({
     planted()
   })
+  
+  
+  
   
   # add download table functionality
   output$download1 <- downloadHandler(
