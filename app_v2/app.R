@@ -26,8 +26,8 @@ trees <- vancouver_trees %>%
 
 # user interface 
 ui <- fluidPage(
-  theme = shinytheme("flatly"), 
-  titlePanel("Vancouver Street Tree Planting"),
+  theme = shinytheme("flatly"),                            # apply overall theme to app
+  titlePanel("Vancouver Street Tree Planting"),            # app title
   sidebarLayout(                                           # use sidebar layout
     sidebarPanel(
       chooseSliderSkin(skin = c("Square"), color = NULL),  # customize slider appearance
@@ -148,9 +148,6 @@ server <- function(input, output, session) {
   output$planted <- DT::renderDataTable({
     planted()
   })
-  
-  
-  
   
   # add download table functionality
   output$download1 <- downloadHandler(
