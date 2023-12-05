@@ -9,7 +9,7 @@
 
 This is a repository that contains all files as required for UBC's STAT 545B Assignment B3 and Assignment B4. This is an individual assignment completed in Fall Term as part of STAT 545B: Exploratory Data Analysis II. In this project, I use the `shiny` R package to build and update a Shiny app!
 
-## REPOSITORY FILE STRUCTURE
+## REPOSITORY STRUCTURE
 
 This repository includes two folders: `app_v1` and `app_v2`.
 
@@ -43,13 +43,13 @@ Additional features of interest include:
 
 ## ASSIGNMENT B4
 
-For Assignment B4, I chose **Option C: Update Your Shiny App**. To add three new features to my app, I referenced the original [Assignment 3 outline](https://stat545.stat.ubc.ca/assignments/assignment-b3/) and found three feature ideas to implement. Below is a description of the three features that I updated based on these recommendations outlined in the assignment: 
+For Assignment B4, I chose **Option C: Update Your Shiny App**. To add three new features to my app, I referenced the original [Assignment 3 outline](https://stat545.stat.ubc.ca/assignments/assignment-b3/) and found three more feature ideas to implement. Below is a description of the three features that I updated based on these recommendations outlined in the assignment: 
 
 1. **Separate tabs**. I had both a plot and a table, so I separated them into different tabs. This is useful because with both features on one page, the app appears cluttered. By separating the features, the app appears cleaner and easier to understand. I also took advantage of the tab feature to create a `Home` tab that gives a clear overview of the purpose of the app.       
 
 2. **Experiment with packages that add extra features to Shiny such as shinythemes**. I researched the documentation for different packages, and decided to use `shinythemes` to apply a new theme to my app. This is a useful feature because it gives the app a much more streamlined appearance and improves the user experience. 
 
-3. **Add parameters to the plot**. I used `shinyjs::colourInput()` to add a new feature where the user can specify a plot colour. This is a useful feature because it adds to the ways in which to user can customize the plot. Since the plot and table tabs are meant to generate outputs based on the user preferences, any additional custom features improve the app utility. 
+3. **Add parameters to the plot**. I used `shinyjs::colourInput()` to add a new feature where the user can specify a plot colour. This is a useful feature because it adds to the ways in which to user can customize the plot. Since the plot and table tabs are meant to generate outputs based on user preferences, any additional custom features improve the app utility. 
 
 ## LINKS TO THE APPS
 
