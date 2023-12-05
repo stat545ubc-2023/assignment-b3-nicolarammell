@@ -53,18 +53,26 @@ ui <- fluidPage(
     mainPanel(
       tabsetPanel(                                         # use three tabs in main panel
         tabPanel("Home", br(), "Welcome to the Vancouver Street Tree Planting app! 
-                 This app allows you to explore trees planted in Vancouver, BC city streets from 1989 - 2019.", br(), br(), 
+                 This app allows you to explore trees planted in Vancouver, BC city streets from 1989 - 2019.", 
+                 br(), br(), 
                  "To explore trees by neighborhood, try the \"Filter by neighborhood\" option. To refine your 
-                 search geographically, try using the Latitude/Longitude sliders. If you are interested in finding trees belonging 
-                 to specific genera, click on the \"genus\" box to add any number of tree genera using the drop down menu!", br(), br(), 
-                 "As you customize your inputs, your customized plot and table will update in their respective tabs. If you would
-                 like to download your plot or table, simply use the \"Download\" bottons to generate your own copy.", br(), br(), 
+                 search geographically, try using the Latitude/Longitude sliders. If you are interested in 
+                 finding trees belonging to specific genera, click on the \"genus\" box to add any number of 
+                 tree genera using the drop down menu!", 
+                 br(), br(), 
+                 "As you customize your inputs, your customized plot and table will update in their respective 
+                 tabs. If you would like to download your plot or table, simply use the \"Download\" bottons to 
+                 generate your own copy.", 
+                 br(), br(), 
                  "Happy exploring!"),
-        tabPanel("Plot", br(),                             # add colour picker
+        tabPanel("Plot",                                   # name the Plot tab
+                 br(),                                     # add colour picker
                  colourInput("col", "Select outline colour", "#AF37D4", closeOnClick = TRUE), 
-                 plotOutput("plot"), br(),                 # add plot to main panel
+                 plotOutput("plot"),                       # add plot to main panel
+                 br(),                 
                  downloadButton("download2", "Download Plot")),
-        tabPanel("Table", br(), 
+        tabPanel("Table",                                  # name the Table tab
+                 br(), 
                  DT::dataTableOutput("planted"), br(),     # add table to main panel
                  downloadButton("download1", "Download Table"))
       )
