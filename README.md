@@ -43,7 +43,7 @@ Additional features of interest include:
 
 ## ASSIGNMENT B4
 
-For Assignment B4, I chose **Option C: Update Your Shiny App**. To add three new features to my app, I referenced the original [Assignment 3 outline](https://stat545.stat.ubc.ca/assignments/assignment-b3/) and found three more feature ideas to implement. In general, I focused on intentionally improving the overall app design, as well as adding information on what the app is intended for and how to use it. Below is a description of the three features that I updated based on these recommendations outlined in the assignment:  
+For Assignment B4, I chose **Option C: Update Your Shiny App**. To add three new features to my app, I referenced the original [Assignment 3 outline](https://stat545.stat.ubc.ca/assignments/assignment-b3/) and found three more feature ideas to implement. In general, I focused on intentionally improving the overall app design, as well as adding information on what the app is intended for and how to use it. Below is a description of the three new features that I added based on the recommendations outlined in the assignment:  
 
 1. **Separate tabs**. I had both a plot and a table, so I separated them into different tabs. This is useful because with both features on one page, the app appears cluttered. By separating the features, the app appears cleaner and easier to understand. I also took advantage of the tab feature to create a `Home` tab that gives a clear overview of the purpose of the app.       
 
