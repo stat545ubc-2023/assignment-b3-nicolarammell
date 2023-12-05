@@ -52,7 +52,9 @@ ui <- fluidPage(
     ),
     mainPanel(
       tabsetPanel(                                         # use three tabs in main panel
-        tabPanel("Home", br(), "Welcome to the Vancouver Street Tree Planting app! 
+        tabPanel("Home",                                   # name the Home tab
+                 br(),         
+                 "Welcome to the Vancouver Street Tree Planting app! 
                  This app allows you to explore trees planted in Vancouver, BC city streets from 1989 - 2019.", 
                  br(), br(), 
                  "To explore trees by neighborhood, try the \"Filter by neighborhood\" option. To refine your 
