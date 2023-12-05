@@ -30,7 +30,7 @@ ui <- fluidPage(
   titlePanel("Vancouver Street Tree Planting"),            # app title
   sidebarLayout(                                           # use sidebar layout
     sidebarPanel(
-      chooseSliderSkin(skin = c("Square"), color = NULL),  # customize slider appearance
+      chooseSliderSkin(skin = c("Sharp"), color = NULL),  # customize slider appearance
       sliderInput("latitudeInput", "Latitude", 49.2000, 49.2900, c(49.2000, 49.2900)),
       sliderInput("longitudeInput", "Longitude", -123.2, -123.0, c(-123.2, -123.0)),
       uiOutput("genusSelectOutput"),                       # genus filter to specify below
@@ -45,7 +45,7 @@ ui <- fluidPage(
       br(), br(),                                          # breaks for spacing 
       imageOutput("photo1"),                               # place image using imageOutput 
       span("Photo Credit:",                                # provide photo reference 
-           tags$a("CBC (2021)", href = "https://www.cbc.ca/news/canada/british-columbia/vancouver-cherry-blossom-japanese-roots-1.5982533")),
+           tags$a("CBC", href = "https://www.cbc.ca/news/canada/photos/spring-blossoms-scroller-1.6442639")),
       br(), br(),                                          # add my info below
       span("Created by", a(href = "https://github.com/nicolarammell", "Nicola Rammell"), span(" | Code on", a(href = "https://github.com/stat545ubc-2023/shiny-app", "GitHub"))
       ),
