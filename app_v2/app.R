@@ -61,7 +61,7 @@ ui <- fluidPage(
                  like to download your plot or table, simply use the \"Download\" bottons to generate your own copy.", br(), br(), 
                  "Happy exploring!"),
         tabPanel("Plot", br(),                             # add colour picker
-                 colourInput("col", "Select outline colour", "black", closeOnClick = TRUE), 
+                 colourInput("col", "Select outline colour", "#AF37D4", closeOnClick = TRUE), 
                  plotOutput("plot"), br(),                 # add plot to main panel
                  downloadButton("download2", "Download Plot")),
         tabPanel("Table", br(), 
@@ -80,7 +80,7 @@ server <- function(input, output, session) {
     selectInput("genusInput", "genus",                      # from trees$genus
                 sort(unique(trees$genus)),                  # allow all unique options from df
                 multiple = TRUE,                            # allow any number of genera
-                selected = c("ACER", "PRUNUS", "FRAXINUS")) # set the defaults
+                selected = c("PRUNUS"))                     # set the defaults
   })
   
   # settings for optional neighbourhood filter
